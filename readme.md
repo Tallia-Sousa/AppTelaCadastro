@@ -1,3 +1,4 @@
-![Minha imagem](res/drawable/trabalho.png)
+![](app/src/main/res/drawable/trabalho.png)
+
 
 
