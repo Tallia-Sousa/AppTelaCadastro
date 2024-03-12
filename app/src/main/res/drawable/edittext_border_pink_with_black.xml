@@ -1,0 +1,5 @@
+<shape xmlns:android="http://schemas.android.com/apk/res/android" android:shape="rectangle">
+    <stroke android:width="2dp" android:color="#000000" /> <!-- Define a largura da borda como 2dp e a cor como preto -->
+    <solid android:color="#FF007F" /> <!-- Define a cor de fundo como rosa -->
+     <!-- Define os cantos arredondados -->
+</shape>

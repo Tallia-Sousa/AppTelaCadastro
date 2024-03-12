@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+
+    android:background="#FF007F"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:visibility="visible"
+    tools:context=".MainActivity"
+    tools:visibility="visible">
+    <!--imagem-->
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="353dp"
+        android:layout_height="281dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/serie"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="29dp"
+        tools:layout_editor_absoluteY="50dp"
+
+
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cadastre  seu filme!"
+        android:textSize="20sp"
+        android:textColor="#120F0F"
+        tools:layout_editor_absoluteX="115dp"
+        tools:layout_editor_absoluteY="350dp"
+
+        />
+
+
+    <EditText
+        android:id="@+id/editTextTitle"
+        android:layout_width="290dp"
+        android:layout_height="31dp"
+        android:layout_weight="1"
+        android:background="@drawable/edittext_border_pink_with_black"
+        android:hint=""
+        android:textColorHint="#FFFFFF"
+        tools:layout_editor_absoluteX="92dp"
+        tools:layout_editor_absoluteY="411dp" />
+
+    <TextView
+        android:layout_width="88dp"
+        android:layout_height="30dp"
+        android:layout_gravity="center_vertical"
+        android:text="Título"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        tools:layout_editor_absoluteX="29dp"
+        tools:layout_editor_absoluteY="412dp" />
+
+    <Button
+        android:id="@+id/botaoC"
+        android:layout_width="111dp"
+        android:layout_height="43dp"
+        android:background="#000"
+        android:textSize="14sp"
+        android:text="Cadastrar"
+        tools:layout_editor_absoluteX="260dp"
+        tools:layout_editor_absoluteY="479dp" />
+
+    <Button
+        android:layout_width="105dp"
+        android:layout_height="43dp"
+        android:background="#000"
+        android:text="Limpar"
+        android:textSize="14sp"
+        tools:layout_editor_absoluteX="30dp"
+        tools:layout_editor_absoluteY="479dp" />
+</androidx.constraintlayout.widget.ConstraintLayout>
