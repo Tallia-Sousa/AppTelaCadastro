@@ -10,71 +10,112 @@
     android:visibility="visible"
     tools:context=".MainActivity"
     tools:visibility="visible">
-    <!--imagem-->
 
-
+    <!--imagem da tela-->
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="353dp"
-        android:layout_height="281dp"
+        android:layout_width="330dp"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
         android:scaleType="centerCrop"
         android:src="@drawable/serie"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="29dp"
-        tools:layout_editor_absoluteY="50dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"/>
 
-
-        />
+<!--frase de cadastro-->
 
     <TextView
-        android:layout_width="wrap_content"
+        android:id="@+id/textView"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:text="Cadastre  seu filme!"
+        android:text="Cadastre seu filme"
+        app:layout_constraintTop_toBottomOf="@id/imageView"
         android:textSize="20sp"
         android:textColor="#120F0F"
-        tools:layout_editor_absoluteX="115dp"
-        tools:layout_editor_absoluteY="350dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp"
+        android:gravity="center"/>
 
-        />
 
 
+
+<!--    campo do filme-->
     <EditText
         android:id="@+id/editTextTitle"
-        android:layout_width="290dp"
-        android:layout_height="31dp"
-        android:layout_weight="1"
-        android:background="@drawable/edittext_border_pink_with_black"
-        android:hint=""
-        android:textColorHint="#FFFFFF"
-        tools:layout_editor_absoluteX="92dp"
-        tools:layout_editor_absoluteY="411dp" />
+        android:layout_width="300dp"
+    android:layout_height="wrap_content"
+    android:background="@drawable/edittext_border_pink_with_black"
+    app:layout_constraintTop_toBottomOf="@id/textView"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    android:layout_marginTop="16dp"
+    android:padding="16dp"
+    android:inputType="text"
+    android:hint="Digite o titulo do filme"
+    android:textSize="16sp"/>
 
-    <TextView
-        android:layout_width="88dp"
-        android:layout_height="30dp"
-        android:layout_gravity="center_vertical"
-        android:text="Título"
-        android:textColor="#000000"
-        android:textSize="20sp"
-        tools:layout_editor_absoluteX="29dp"
-        tools:layout_editor_absoluteY="412dp" />
+
+
+
+
+<!--    <Button-->
+    <Button
+        android:id="@+id/botaoL"
+        android:layout_width="120dp"
+        android:layout_height="40dp"
+        android:text="Limpar"
+        app:layout_constraintTop_toBottomOf="@id/editTextTitle"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/botaoC"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:padding="8dp"
+        android:background="#000"
+        android:textColor="#FFFFFF"/>
 
     <Button
         android:id="@+id/botaoC"
-        android:layout_width="111dp"
-        android:layout_height="43dp"
-        android:background="#000"
-        android:textSize="14sp"
+        android:layout_width="120dp"
+        android:layout_height="40dp"
         android:text="Cadastrar"
-        tools:layout_editor_absoluteX="260dp"
-        tools:layout_editor_absoluteY="479dp" />
-
-    <Button
-        android:layout_width="105dp"
-        android:layout_height="43dp"
+        app:layout_constraintTop_toBottomOf="@id/editTextTitle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/botaoL"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="8dp"
+        android:padding="8dp"
         android:background="#000"
-        android:text="Limpar"
-        android:textSize="14sp"
-        tools:layout_editor_absoluteX="30dp"
-        tools:layout_editor_absoluteY="479dp" />
+        android:textColor="#FFFFFF"/>
+
+
+
+
+
+
+
+
+    <!--        android:id="@+id/botaoC"-->
+<!--        android:layout_width="111dp"-->
+<!--        android:layout_height="43dp"-->
+<!--        android:background="#000"-->
+<!--        android:textSize="14sp"-->
+<!--        android:text="Cadastrar"-->
+<!--        tools:layout_editor_absoluteX="260dp"-->
+<!--        tools:layout_editor_absoluteY="479dp" />-->
+
+<!--    <Button-->
+<!--        android:id="@+id/botaoL"-->
+<!--        android:layout_width="105dp"-->
+<!--        android:layout_height="43dp"-->
+<!--        android:background="#000"-->
+<!--        android:text="Limpar"-->
+<!--        android:textSize="14sp"-->
+<!--        tools:layout_editor_absoluteX="30dp"-->
+<!--        tools:layout_editor_absoluteY="479dp" />-->
 </androidx.constraintlayout.widget.ConstraintLayout>
