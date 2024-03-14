@@ -64,6 +64,9 @@
 
 
 
+
+
+
 <!--    <Button-->
     <Button
         android:id="@+id/botaoL"
@@ -96,26 +99,22 @@
 
 
 
+    <TextView
+
+        android:id="@+id/textViewUserInput"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleType="centerCrop"
+        android:text=""
+        app:layout_constraintEnd_toStartOf="@id/botaoC"
+        app:layout_constraintTop_toBottomOf="@+id/botaoC"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/botaoL"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        />
 
 
 
-
-    <!--        android:id="@+id/botaoC"-->
-<!--        android:layout_width="111dp"-->
-<!--        android:layout_height="43dp"-->
-<!--        android:background="#000"-->
-<!--        android:textSize="14sp"-->
-<!--        android:text="Cadastrar"-->
-<!--        tools:layout_editor_absoluteX="260dp"-->
-<!--        tools:layout_editor_absoluteY="479dp" />-->
-
-<!--    <Button-->
-<!--        android:id="@+id/botaoL"-->
-<!--        android:layout_width="105dp"-->
-<!--        android:layout_height="43dp"-->
-<!--        android:background="#000"-->
-<!--        android:text="Limpar"-->
-<!--        android:textSize="14sp"-->
-<!--        tools:layout_editor_absoluteX="30dp"-->
-<!--        tools:layout_editor_absoluteY="479dp" />-->
 </androidx.constraintlayout.widget.ConstraintLayout>
