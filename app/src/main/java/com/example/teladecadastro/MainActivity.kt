@@ -60,8 +60,9 @@ class MainActivity : AppCompatActivity() {
 
             botaoL.setOnClickListener {
 
-
+              titulos.clear()
                 textviw.text = ""
+
             }
             }
 

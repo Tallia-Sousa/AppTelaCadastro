@@ -58,6 +58,7 @@
     android:padding="16dp"
     android:inputType="text"
     android:hint="Digite o titulo do filme"
+        android:textColorHint="#120F0F"
     android:textSize="16sp"/>
 
 
